@@ -1,0 +1,51 @@
+/*config geral*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* padronização das cores por variaveis */
+:root{
+    --corAzul:#0044AF;
+    --corVermelho:#FF0122;
+    --corAmarelo:#FFAF00;
+}
+
+#vertical .container{
+    width: 400px;
+    height: 350px;
+    display:grid;
+    grid-template-columns: repeat(3,33.3%);
+    grid-template-rows: repeat(1, 350px);
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+}   
+#horizontal .container{
+    width: 402px;
+    height: 400px;
+    display:grid;
+    grid-template-columns: repeat(1, 402px);
+    grid-template-rows: repeat(3,33.3%);
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+} 
+
+#vertical .container .item1{
+    background-color: var(--corVermelho);
+}
+#vertical .container .item2{
+    background-color: var(--corAmarelo);
+}
+#vertical .container .item3{
+    background-color: var(--corAzul);
+}
+
+#horizontal .container .item4{
+    background-color: var(--corVermelho);
+}
+#horizontal .container .item5{
+    background-color: var(--corAmarelo);
+}
+#horizontal .container .item6{
+    background-color: var(--corAzul);
+}
